@@ -2359,7 +2359,7 @@
         async function getBasketProducts() {
             try {
                 if (!productsData.length) {
-                    const res = await fetch("/files/data/packages.json");
+                    const res = await fetch("files/data/packages.json");
                     if (!res.ok) throw new Error(res.statusText);
                     productsData = await res.json();
                 }
@@ -2478,7 +2478,7 @@
         async function getProducts() {
             try {
                 if (!load_packages_productsData.length) {
-                    const res = await fetch("/files/data/packages.json");
+                    const res = await fetch("files/data/packages.json");
                     if (!res.ok) throw new Error(res.statusText);
                     load_packages_productsData = await res.json();
                 }
@@ -2568,7 +2568,7 @@
         async function card_getProducts() {
             try {
                 if (!card_productsData.length) {
-                    const res = await fetch("/files/data/packages.json");
+                    const res = await fetch("files/data/packages.json");
                     if (!res.ok) throw new Error(res.statusText);
                     card_productsData = await res.json();
                 }
