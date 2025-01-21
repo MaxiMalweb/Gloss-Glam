@@ -2311,7 +2311,7 @@
         indexPage && showMessageUnder(subscribeForm, "You are subscribed to newsletter", 1);
         function showErrorMessage(message, linkHash, linkText, target) {
             target.textContent == "";
-            const msg = `<div class="error">\n      <p>${message}</p>\n      <a href="/#${linkHash}">${linkText}</a>      \n    </div>`;
+            const msg = `<div class="error">\n      <p>${message}</p>\n      <a href="/Gloss-Glam/#${linkHash}">${linkText}</a>      \n    </div>`;
             target.insertAdjacentHTML("afterbegin", msg);
             console.log(message);
         }
