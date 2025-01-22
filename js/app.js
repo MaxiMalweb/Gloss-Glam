@@ -2310,6 +2310,8 @@
         indexPage && subscribeForm.addEventListener("submit", (e => checkSubmitData(e, subscribeForm)));
         indexPage && showMessageUnder(subscribeForm, "You are subscribed to newsletter", 1);
         function showErrorMessage(message, linkHash, linkText, target) {
+            const serverError = target.querySelector(".error");
+            if (serverError) return;
             target.textContent == "";
             const msg = `<div class="error">\n      <p>${message}</p>\n      <a href="/#${linkHash}">${linkText}</a>      \n    </div>`;
             target.insertAdjacentHTML("afterbegin", msg);
@@ -2351,7 +2353,8 @@
             basket.classList.remove("_show-cart");
         }));
         function closeBasketByError() {
-            basket.querySelector(".error").addEventListener("click", (function() {
+            basket.querySelector(".error").addEventListener("click", (function(e) {
+                e.preventDefault();
                 basket.classList.remove("_show-cart");
             }));
         }
