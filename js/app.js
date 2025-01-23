@@ -2313,7 +2313,7 @@
             const serverError = target.querySelector(".error");
             if (serverError) return;
             target.textContent == "";
-            const msg = `<div class="error">\n      <p>${message}</p>\n      <a href="/Gloss-Glam/#${linkHash}">${linkText}</a>      \n    </div>`;
+            const msg = `<div class="error">\n      <p>${message}</p>\n      <a data-goto="#linkHash" href="/#${linkHash}">${linkText}</a>      \n    </div>`;
             target.insertAdjacentHTML("afterbegin", msg);
             console.log(message);
         }
