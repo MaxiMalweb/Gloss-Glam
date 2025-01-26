@@ -2343,7 +2343,7 @@
         const basketSimplebarList = document.querySelector(".basket-list");
         const basketProductsList = indexPage && basketSimplebarList.querySelector(".simplebar-content");
         let productsData = [];
-        const mobileMenuOpen = document.documentElement.contains(".menu-open");
+        const mobileMenuOpen = document.documentElement.contains(".menu__open");
         indexPage && openBasketBtn.addEventListener("click", (function() {
             basket.classList.toggle("_show-cart");
             getBasketProducts();
