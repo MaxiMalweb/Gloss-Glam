@@ -2357,7 +2357,7 @@
             basket.querySelector(".error a").addEventListener("click", (function(e) {
                 e.preventDefault();
                 basket.classList.remove("_show-cart");
-                if (htmlElement.closest(".menu__open")) {
+                if (!htmlElement.closest(".menu__open")) {
                     hamburgerButton.setAttribute("data-state", "closed");
                     hamburgerButton.setAttribute("aria-expanded", "false");
                 }
