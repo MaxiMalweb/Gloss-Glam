@@ -2343,7 +2343,7 @@
         const basketSimplebarList = document.querySelector(".basket-list");
         const basketProductsList = indexPage && basketSimplebarList.querySelector(".simplebar-content");
         let productsData = [];
-        const mobileMenuOpen = document.documentElement.contains(".menu__open");
+        document.documentElement;
         indexPage && openBasketBtn.addEventListener("click", (function() {
             basket.classList.toggle("_show-cart");
             getBasketProducts();
@@ -2357,7 +2357,7 @@
             basket.querySelector(".error a").addEventListener("click", (function(e) {
                 e.preventDefault();
                 basket.classList.remove("_show-cart");
-                if (mobileMenuOpen) {
+                if (mobileMenuOpen.closest(".menu__open")) {
                     hamburgerButton.setAttribute("data-state", "closed");
                     hamburgerButton.setAttribute("aria-expanded", "false");
                 }
