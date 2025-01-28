@@ -5,17 +5,258 @@
 	<title>Gloss&Glam</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250121205431">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250128202737">
 	<link rel="icon" href="img/favicon.webp" type="image.webp">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<!--<link href="https://v1.fontapi.ir/css/SFProDisplay:400;500?_v=20250121205431" rel="stylesheet"> -->
+	<!-- <link href="https://v1.fontapi.ir/css/SFProDisplay:400;500?_v=20250128202737" rel="stylesheet"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body class="cardPage">
 	<div class="wrapper">
+		<div class="preloader">
+			<div class="preloader__body">
+				<div class="preloader__circle"></div>
+				<!-- <div class="preloader__percents">
+      <span>0</span> %
+    </div> -->
+			</div>
+		</div>
 
+		<script>
+			const myPreloader = document.querySelector(".preloader");
+			const indexPage = document.getElementsByClassName('indexPage')[0];
+			const cardPage = document.getElementsByClassName('cardPage')[0];
+			const percents = myPreloader.querySelector(".preloader__percents span");
+
+			indexPage.classList.add("page-loading");
+			cardPage && cardPage.classList.add("page-loading");
+
+			window.onload = function() {
+				myPreloader.classList.add("_preloaderOff");
+				indexPage && indexPage.classList.remove("page-loading");
+				cardPage && cardPage.classList.remove("page-loading");
+			}
+
+			// document.addEventListener('DOMContentLoaded', () => {
+			//   const pageContent = document.querySelectorAll('img');
+			//   let i = 0;
+			//   console.log(pageContent);
+			//   Array.from(pageContent).forEach((el, index) => {
+			//     if (el.isConnected) {
+			//       i++;
+			//       percents.innerHTML = ((i * 100) / percents.length);
+
+			//       if (i === pageContent.length) {
+			//         percents.innerHTML = 100;
+			//       }
+			//     }
+			//   })
+			// })
+		</script>
+		<div class="snow-wrp">
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+			<div class="snow"></div>
+		</div>
 		<main class="page">
 			<div class="card__container">
 				<div class="card-body" id="card-body">
@@ -27,7 +268,7 @@
 		</main>
 
 	</div>
-	<script src="js/app.min.js?_v=20250121205431"></script>
+	<script src="js/app.min.js?_v=20250128202737"></script>
 
 </body>
 
